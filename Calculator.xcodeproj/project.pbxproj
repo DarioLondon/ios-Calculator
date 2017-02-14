@@ -13,6 +13,7 @@
 		A3D498C91E4A3B5300AEF9D6 /* Calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3D498C71E4A3B5300AEF9D6 /* Calculator.xcdatamodeld */; };
 		A3D498CB1E4A3B5300AEF9D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3D498CA1E4A3B5300AEF9D6 /* Assets.xcassets */; };
 		A3D498CE1E4A3B5300AEF9D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D498CC1E4A3B5300AEF9D6 /* LaunchScreen.storyboard */; };
+		A3D498DF1E5222E200AEF9D6 /* CalculatorEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D498DE1E5222E200AEF9D6 /* CalculatorEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A3D498CA1E4A3B5300AEF9D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3D498CD1E4A3B5300AEF9D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3D498CF1E4A3B5300AEF9D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3D498DE1E5222E200AEF9D6 /* CalculatorEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A3D498CC1E4A3B5300AEF9D6 /* LaunchScreen.storyboard */,
 				A3D498CF1E4A3B5300AEF9D6 /* Info.plist */,
 				A3D498C71E4A3B5300AEF9D6 /* Calculator.xcdatamodeld */,
+				A3D498DE1E5222E200AEF9D6 /* CalculatorEngine.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3D498C31E4A3B5300AEF9D6 /* ViewController.swift in Sources */,
+				A3D498DF1E5222E200AEF9D6 /* CalculatorEngine.swift in Sources */,
 				A3D498C11E4A3B5300AEF9D6 /* AppDelegate.swift in Sources */,
 				A3D498C91E4A3B5300AEF9D6 /* Calculator.xcdatamodeld in Sources */,
 			);
