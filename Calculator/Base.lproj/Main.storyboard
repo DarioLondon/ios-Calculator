@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qES-Jj-hGT">
-                                <rect key="frame" x="16" y="28" width="343" height="35"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="6bR-nc-mqs"/>
                                 </constraints>
@@ -40,10 +39,10 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="no5-7f-zlC">
-                                <rect key="frame" x="16" y="71" width="343" height="97"/>
+                                <rect key="frame" x="0.0" y="71" width="320" height="83"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWX-6y-SQl">
-                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="97"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="83"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -58,7 +57,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PP6-54-FUM">
-                                        <rect key="frame" x="68.5" y="0.0" width="68.5" height="97"/>
+                                        <rect key="frame" x="64" y="0.0" width="64" height="83"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -73,7 +72,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgJ-tt-SU9">
-                                        <rect key="frame" x="137" y="0.0" width="69" height="97"/>
+                                        <rect key="frame" x="128" y="0.0" width="64" height="83"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -88,7 +87,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bD0-b7-kaN">
-                                        <rect key="frame" x="206" y="0.0" width="68.5" height="97"/>
+                                        <rect key="frame" x="192" y="0.0" width="64" height="83"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -103,7 +102,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R70-2U-aQ9">
-                                        <rect key="frame" x="274.5" y="0.0" width="68.5" height="97"/>
+                                        <rect key="frame" x="256" y="0.0" width="64" height="83"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -134,10 +133,10 @@
                                 </userDefinedRuntimeAttributes>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvy-he-IWx">
-                                <rect key="frame" x="16" y="168" width="343" height="96"/>
+                                <rect key="frame" x="0.0" y="154" width="320" height="82.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tA-Kh-Vq4">
-                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="96"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="82.5"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -147,12 +146,12 @@
                                                 <color key="value" red="0.81099330359999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
+                                                <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKK-Eh-5lS">
-                                        <rect key="frame" x="68.5" y="0.0" width="69" height="96"/>
+                                        <rect key="frame" x="64" y="0.0" width="64" height="82.5"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -162,12 +161,12 @@
                                                 <color key="value" red="0.81099330359999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
+                                                <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeU-TH-NRD">
-                                        <rect key="frame" x="137.5" y="0.0" width="68" height="96"/>
+                                        <rect key="frame" x="128" y="0.0" width="64" height="82.5"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -177,12 +176,12 @@
                                                 <color key="value" red="0.81099330359999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
+                                                <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyI-tj-Mjh">
-                                        <rect key="frame" x="205.5" y="0.0" width="69" height="96"/>
+                                        <rect key="frame" x="192" y="0.0" width="64" height="82.5"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -192,12 +191,12 @@
                                                 <color key="value" red="0.81099330359999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
+                                                <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tc3-O4-FFw">
-                                        <rect key="frame" x="274.5" y="0.0" width="68.5" height="96"/>
+                                        <rect key="frame" x="256" y="0.0" width="64" height="82.5"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -207,7 +206,7 @@
                                                 <color key="value" red="0.81099330359999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
+                                                <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
@@ -227,105 +226,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxo-Yh-yXY">
-                                <rect key="frame" x="16" y="264" width="343" height="97"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifd-ZK-fMN">
-                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="97"/>
-                                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.81099330359999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqH-I8-Hto">
-                                        <rect key="frame" x="68.5" y="0.0" width="69" height="97"/>
-                                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.81099330359999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g3-qv-zlW">
-                                        <rect key="frame" x="137.5" y="0.0" width="68" height="97"/>
-                                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.81099330359999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2IA-eK-MVR">
-                                        <rect key="frame" x="205.5" y="0.0" width="69" height="97"/>
-                                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.81099330359999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j28-og-ZZA">
-                                        <rect key="frame" x="274.5" y="0.0" width="68.5" height="97"/>
-                                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.81099330359999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="2IA-eK-MVR" firstAttribute="width" secondItem="Ifd-ZK-fMN" secondAttribute="width" id="81G-8a-UyT"/>
-                                    <constraint firstItem="qqH-I8-Hto" firstAttribute="width" secondItem="Ifd-ZK-fMN" secondAttribute="width" id="TdE-bI-DFW"/>
-                                    <constraint firstItem="j28-og-ZZA" firstAttribute="width" secondItem="Ifd-ZK-fMN" secondAttribute="width" id="Tvf-hk-blQ"/>
-                                    <constraint firstItem="5g3-qv-zlW" firstAttribute="width" secondItem="Ifd-ZK-fMN" secondAttribute="width" id="hag-ad-JBD"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXt-Oc-k3L">
-                                <rect key="frame" x="16" y="361" width="343" height="97"/>
+                                <rect key="frame" x="0.0" y="320" width="320" height="82.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVM-4N-7UC">
-                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="97"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="82.5"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -340,7 +245,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68c-ni-Fzc">
-                                        <rect key="frame" x="68.5" y="0.0" width="69" height="97"/>
+                                        <rect key="frame" x="64" y="0.0" width="64" height="82.5"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -355,7 +260,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdj-Qk-Nr3">
-                                        <rect key="frame" x="137.5" y="0.0" width="68" height="97"/>
+                                        <rect key="frame" x="128" y="0.0" width="64" height="82.5"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -370,7 +275,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9H-3G-hRf">
-                                        <rect key="frame" x="205.5" y="0.0" width="69" height="97"/>
+                                        <rect key="frame" x="192" y="0.0" width="64" height="82.5"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -385,7 +290,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZA-R2-RPd">
-                                        <rect key="frame" x="274.5" y="0.0" width="68.5" height="97"/>
+                                        <rect key="frame" x="256" y="0.0" width="64" height="82.5"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -416,10 +321,10 @@
                                 </userDefinedRuntimeAttributes>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ua-Tx-4oZ">
-                                <rect key="frame" x="16" y="458" width="343" height="96.5"/>
+                                <rect key="frame" x="0.0" y="402.5" width="320" height="82.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K66-WR-Isu">
-                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="96.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="82.5"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -434,7 +339,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfW-K3-5Os">
-                                        <rect key="frame" x="68.5" y="0.0" width="69" height="96.5"/>
+                                        <rect key="frame" x="64" y="0.0" width="64" height="82.5"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -449,7 +354,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk6-1c-IVE">
-                                        <rect key="frame" x="137.5" y="0.0" width="68" height="96.5"/>
+                                        <rect key="frame" x="128" y="0.0" width="64" height="82.5"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -464,7 +369,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhU-2d-656">
-                                        <rect key="frame" x="205.5" y="0.0" width="69" height="96.5"/>
+                                        <rect key="frame" x="192" y="0.0" width="64" height="82.5"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -479,7 +384,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kw4-NV-6j1">
-                                        <rect key="frame" x="274.5" y="0.0" width="68.5" height="96.5"/>
+                                        <rect key="frame" x="256" y="0.0" width="64" height="82.5"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -510,10 +415,10 @@
                                 </userDefinedRuntimeAttributes>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYh-oV-hqa">
-                                <rect key="frame" x="16" y="554.5" width="343" height="96.5"/>
+                                <rect key="frame" x="0.0" y="485" width="320" height="83"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHo-df-Iwc">
-                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="96.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="83"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -528,7 +433,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4I-J0-txg">
-                                        <rect key="frame" x="68.5" y="0.0" width="69" height="96.5"/>
+                                        <rect key="frame" x="64" y="0.0" width="64" height="83"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -543,7 +448,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-VV-nK5">
-                                        <rect key="frame" x="137.5" y="0.0" width="68" height="96.5"/>
+                                        <rect key="frame" x="128" y="0.0" width="64" height="83"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -558,7 +463,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0t-Dz-wlK">
-                                        <rect key="frame" x="205.5" y="0.0" width="69" height="96.5"/>
+                                        <rect key="frame" x="192" y="0.0" width="64" height="83"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -573,7 +478,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3d-I1-VhG">
-                                        <rect key="frame" x="274.5" y="0.0" width="68.5" height="96.5"/>
+                                        <rect key="frame" x="256" y="0.0" width="64" height="83"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -603,37 +508,134 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxo-Yh-yXY">
+                                <rect key="frame" x="0.0" y="236.5" width="320" height="83.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifd-ZK-fMN">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="83.5"/>
+                                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.81099330359999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqH-I8-Hto">
+                                        <rect key="frame" x="64" y="0.0" width="64" height="83.5"/>
+                                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.81099330359999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g3-qv-zlW">
+                                        <rect key="frame" x="128" y="0.0" width="64" height="83.5"/>
+                                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.81099330359999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2IA-eK-MVR">
+                                        <rect key="frame" x="192" y="0.0" width="64" height="83.5"/>
+                                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.81099330359999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j28-og-ZZA">
+                                        <rect key="frame" x="256" y="0.0" width="64" height="83.5"/>
+                                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.81099330359999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2IA-eK-MVR" firstAttribute="width" secondItem="Ifd-ZK-fMN" secondAttribute="width" id="81G-8a-UyT"/>
+                                    <constraint firstItem="qqH-I8-Hto" firstAttribute="width" secondItem="Ifd-ZK-fMN" secondAttribute="width" id="TdE-bI-DFW"/>
+                                    <constraint firstItem="j28-og-ZZA" firstAttribute="width" secondItem="Ifd-ZK-fMN" secondAttribute="width" id="Tvf-hk-blQ"/>
+                                    <constraint firstItem="5g3-qv-zlW" firstAttribute="width" secondItem="Ifd-ZK-fMN" secondAttribute="width" id="hag-ad-JBD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="hxo-Yh-yXY" secondAttribute="leading" id="6mB-N0-SFS"/>
+                            <constraint firstAttribute="trailing" secondItem="no5-7f-zlC" secondAttribute="trailing" id="1AJ-sy-K3b"/>
+                            <constraint firstItem="RXt-Oc-k3L" firstAttribute="top" secondItem="hxo-Yh-yXY" secondAttribute="bottom" id="78Z-th-i6m"/>
+                            <constraint firstAttribute="trailing" secondItem="iYh-oV-hqa" secondAttribute="trailing" id="7d9-rZ-Up6"/>
+                            <constraint firstItem="hxo-Yh-yXY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8NE-5k-fxe"/>
+                            <constraint firstItem="hxo-Yh-yXY" firstAttribute="top" secondItem="Pvy-he-IWx" secondAttribute="bottom" id="ATP-1E-6y6"/>
                             <constraint firstItem="no5-7f-zlC" firstAttribute="top" secondItem="qES-Jj-hGT" secondAttribute="bottom" constant="8" id="Acx-zy-58X"/>
                             <constraint firstItem="iYh-oV-hqa" firstAttribute="top" secondItem="fk6-1c-IVE" secondAttribute="bottom" id="GfB-DU-669"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qES-Jj-hGT" secondAttribute="trailing" id="HpJ-jc-cXw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iYh-oV-hqa" secondAttribute="bottom" id="HO4-17-jjE"/>
+                            <constraint firstAttribute="trailing" secondItem="qES-Jj-hGT" secondAttribute="trailing" id="HpJ-jc-cXw"/>
+                            <constraint firstItem="RXt-Oc-k3L" firstAttribute="top" secondItem="hxo-Yh-yXY" secondAttribute="bottom" id="InT-5s-HW6"/>
                             <constraint firstItem="1ua-Tx-4oZ" firstAttribute="top" secondItem="DZA-R2-RPd" secondAttribute="bottom" id="JY0-wB-rFe"/>
+                            <constraint firstAttribute="trailing" secondItem="1ua-Tx-4oZ" secondAttribute="trailing" id="KtG-Ve-jFZ"/>
                             <constraint firstItem="Pvy-he-IWx" firstAttribute="top" secondItem="PP6-54-FUM" secondAttribute="bottom" id="M1z-SS-Vwp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iYh-oV-hqa" secondAttribute="trailing" id="MdX-bq-iYw"/>
+                            <constraint firstItem="Pvy-he-IWx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MwH-lq-kYG"/>
                             <constraint firstItem="qES-Jj-hGT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="NT1-m4-TSG"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Pvy-he-IWx" secondAttribute="leading" id="Nps-md-Pk3"/>
                             <constraint firstItem="iYh-oV-hqa" firstAttribute="height" secondItem="no5-7f-zlC" secondAttribute="height" id="P4L-aG-bJc"/>
                             <constraint firstItem="1ua-Tx-4oZ" firstAttribute="height" secondItem="no5-7f-zlC" secondAttribute="height" id="Q5h-ip-wiM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="no5-7f-zlC" secondAttribute="trailing" id="S0E-8b-beW"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="1ua-Tx-4oZ" secondAttribute="leading" id="Uvw-xW-qC3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="RXt-Oc-k3L" secondAttribute="trailing" id="VXw-ZF-bDB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1ua-Tx-4oZ" secondAttribute="trailing" id="Wky-Bw-7aI"/>
-                            <constraint firstItem="hxo-Yh-yXY" firstAttribute="top" secondItem="WyI-tj-Mjh" secondAttribute="bottom" id="YBX-Jn-ZDa"/>
+                            <constraint firstItem="RXt-Oc-k3L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UKL-Hc-Ucr"/>
+                            <constraint firstItem="no5-7f-zlC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VPe-u3-2MB"/>
+                            <constraint firstItem="hxo-Yh-yXY" firstAttribute="top" secondItem="Pvy-he-IWx" secondAttribute="bottom" id="W3m-rP-o9G"/>
+                            <constraint firstItem="1ua-Tx-4oZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="akc-hW-Ozj"/>
                             <constraint firstItem="RXt-Oc-k3L" firstAttribute="height" secondItem="no5-7f-zlC" secondAttribute="height" id="b2D-pL-mY6"/>
+                            <constraint firstAttribute="trailing" secondItem="RXt-Oc-k3L" secondAttribute="trailing" id="bAj-Vv-ajb"/>
                             <constraint firstItem="Pvy-he-IWx" firstAttribute="height" secondItem="no5-7f-zlC" secondAttribute="height" id="bn4-h5-OOG"/>
                             <constraint firstItem="hxo-Yh-yXY" firstAttribute="height" secondItem="no5-7f-zlC" secondAttribute="height" id="cB1-1W-OxG"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="iYh-oV-hqa" secondAttribute="leading" id="d74-Gg-Yk8"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="qES-Jj-hGT" secondAttribute="leading" id="gtC-Zb-RxG"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="RXt-Oc-k3L" secondAttribute="leading" id="kEx-Lx-qJd"/>
+                            <constraint firstItem="qES-Jj-hGT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dwJ-06-3jI"/>
+                            <constraint firstAttribute="trailing" secondItem="hxo-Yh-yXY" secondAttribute="trailing" id="hV9-1W-ec3"/>
                             <constraint firstItem="RXt-Oc-k3L" firstAttribute="top" secondItem="5g3-qv-zlW" secondAttribute="bottom" id="pGZ-bo-L3w"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Pvy-he-IWx" secondAttribute="trailing" id="q6p-Z1-PGR"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iYh-oV-hqa" secondAttribute="bottom" constant="16" id="sLc-2U-Qxn"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="no5-7f-zlC" secondAttribute="leading" id="umh-Iy-cvX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hxo-Yh-yXY" secondAttribute="trailing" id="vEA-cN-Egl"/>
+                            <constraint firstItem="iYh-oV-hqa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="psJ-kU-hiP"/>
+                            <constraint firstAttribute="trailing" secondItem="Pvy-he-IWx" secondAttribute="trailing" id="wZc-9F-DXk"/>
                         </constraints>
                     </view>
                 </viewController>
