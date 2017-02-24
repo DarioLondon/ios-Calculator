@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var labelDisplay: UILabel!
-    
+    var history : [String]?
     var  cal : CalculatorEngine?
     var userHasStartedTyping = false
     var displayValue : Double {
@@ -28,6 +28,30 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let sel :Selector = #selector(
+            self.appMovedInBackgound
+        )
+        
+        let notificationCenter = NotificationCenter.default
+        
+        notificationCenter.addObserver(
+            self,
+            selector: sel ,
+            name: NSNotification.Name.UIApplicationWillResignActive,
+            object: nil
+        )
+        
+        let defaults = UserDefaults.standard
+        
+        if let historySaved:AnyObject = defaults.object(forKey:"history") as AnyObject?
+        {
+                self.history = (historySaved as! Array)
+                print(self.history!)
+        }
+        else {
+            print("nil value")
+        }
         // Do any additional setup after loading the view, typically from a nib.
         if (self.cal == nil){
             cal = CalculatorEngine()
@@ -50,6 +74,7 @@ class ViewController: UIViewController {
     
     @IBAction func operationBtn(_ sender: UIButton) {
         
+        self.history?.append(sender.currentTitle!)
         let operation :String = sender.currentTitle!
         print(operation)
         
@@ -88,7 +113,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func digitPressed(_ sender: UIButton) {
-        
+         self.history?.append(sender.currentTitle!)
         let digit = sender.titleLabel?.text
         
         print("digit pressed ==> \(digit!)")
@@ -107,7 +132,31 @@ class ViewController: UIViewController {
     
     
     
+    func appMovedInBackgound(){
+        print("App moved in the background")
+        let defaults = UserDefaults.standard
+        
+        if(self.history != nil){
+           
+            defaults.set(self.history, forKey:"history")
+        }
+        
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "pushToUserHistory" {
+            
+            let secondVC:SecondControllerViewController = segue.destination as! SecondControllerViewController
+            
+            //here I can now pass data to the other view controller by using the property username
+            //for the calulator I could pass the tape data here
+            secondVC.history = self.history!
+            
+            
+        }
+        
+    }
     
     
     override func didReceiveMemoryWarning() {
