@@ -12,9 +12,14 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var labelDisplay: UILabel!
-    var history : [String]?
+    
+    var history : HistorySession?
+    var session : String?
+    
     var  cal : CalculatorEngine?
+    
     var userHasStartedTyping = false
+    
     var displayValue : Double {
         get{
             return Double(labelDisplay.text!)!
@@ -29,33 +34,39 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let sel :Selector = #selector(
-            self.appMovedInBackgound
-        )
-        
-        let notificationCenter = NotificationCenter.default
-        
-        notificationCenter.addObserver(
-            self,
-            selector: sel ,
-            name: NSNotification.Name.UIApplicationWillResignActive,
-            object: nil
-        )
-        
-        let defaults = UserDefaults.standard
-        
-        if let historySaved:AnyObject = defaults.object(forKey:"history") as AnyObject?
-        {
-                self.history = (historySaved as! Array)
-                print(self.history!)
-        }
-        else {
-            print("nil value")
-        }
+//        let sel :Selector = #selector(
+//            self.appMovedInBackgound
+//        )
+//        
+//        let notificationCenter = NotificationCenter.default
+//        
+//        notificationCenter.addObserver(
+//            self,
+//            selector: sel ,
+//            name: NSNotification.Name.UIApplicationWillResignActive,
+//            object: nil
+//        )
+//        
+//        let defaults = UserDefaults.standard
+//        
+//        if let historySaved:AnyObject = defaults.object(forKey:"history") as AnyObject?
+//        {
+//                self.history = (historySaved as! Array)
+//                print(self.history!)
+//        }
+//        else {
+//            print("nil value")
+//        }
         // Do any additional setup after loading the view, typically from a nib.
         if (self.cal == nil){
-            cal = CalculatorEngine()
+            self.cal = CalculatorEngine()
         }
+        
+        if (self.history == nil){
+            self.history = HistorySession()
+        }
+      
+        
         
     }
     
@@ -74,7 +85,7 @@ class ViewController: UIViewController {
     
     @IBAction func operationBtn(_ sender: UIButton) {
         
-        self.history?.append(sender.currentTitle!)
+        self.history!.updateHistory(sender.currentTitle!)
         let operation :String = sender.currentTitle!
         print(operation)
         
@@ -91,40 +102,42 @@ class ViewController: UIViewController {
     }
     
     
-    
-    @IBAction func clearMemory() {
+    @IBAction func clearAll(_ sender: UIButton) {
         
+        self.history!.updateHistory(sender.currentTitle!, newLine: true )
         self.cal!.numberStack.removeAll()
         labelDisplay.text = "0"
         userHasStartedTyping=false
         print("Memory cleaned : => \(self.cal!.numberStack.count)")
     }
     
+   
+    
     
     @IBAction func clearTheLastNumberInserted() {
-        if(self.cal!.numberStack.count>0){
-            
-            self.cal!.numberStack.removeLast()
+      
             labelDisplay.text = "0"
             userHasStartedTyping=false
             print("Last Number Removed : => \(self.cal!.numberStack)")
-        }
+        
     }
     
     
     @IBAction func digitPressed(_ sender: UIButton) {
-         self.history?.append(sender.currentTitle!)
-        let digit = sender.titleLabel?.text
         
-        print("digit pressed ==> \(digit!)")
+         self.history!.updateHistory(sender.currentTitle!)
+        
+        let digit = sender.currentTitle!
+        
+        print("digit pressed ==> " + digit)
         
         if userHasStartedTyping {
             
-            labelDisplay.text = labelDisplay.text! + digit!
+            labelDisplay.text = labelDisplay.text! + digit
         }
         else {
             
-            labelDisplay.text  = digit!
+            labelDisplay.text  = digit
             
             userHasStartedTyping = true;
         }
@@ -138,7 +151,7 @@ class ViewController: UIViewController {
         
         if(self.history != nil){
            
-            defaults.set(self.history, forKey:"history")
+            defaults.set(self.history!.history, forKey:"history")
         }
         
     }
@@ -151,12 +164,14 @@ class ViewController: UIViewController {
             
             //here I can now pass data to the other view controller by using the property username
             //for the calulator I could pass the tape data here
-            secondVC.history = self.history!
-            
-            
+           
+            print("History ==> \(self.history!.history)")
+            secondVC.historyData = self.history!
         }
         
     }
+    
+    
     
     
     override func didReceiveMemoryWarning() {

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A3B193A31E5DD9880007C684 /* Operands.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B193A21E5DD9880007C684 /* Operands.swift */; };
 		A3B592EC1E5F0DD70066074F /* SecondControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B592EB1E5F0DD70066074F /* SecondControllerViewController.swift */; };
+		A3B592EE1E610AFD0066074F /* HistorySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B592ED1E610AFD0066074F /* HistorySession.swift */; };
 		A3D498C11E4A3B5300AEF9D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D498C01E4A3B5300AEF9D6 /* AppDelegate.swift */; };
 		A3D498C31E4A3B5300AEF9D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D498C21E4A3B5300AEF9D6 /* ViewController.swift */; };
 		A3D498C61E4A3B5300AEF9D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D498C41E4A3B5300AEF9D6 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		A3B193A21E5DD9880007C684 /* Operands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operands.swift; sourceTree = "<group>"; };
 		A3B592EB1E5F0DD70066074F /* SecondControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondControllerViewController.swift; sourceTree = "<group>"; };
+		A3B592ED1E610AFD0066074F /* HistorySession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorySession.swift; sourceTree = "<group>"; };
 		A3D498BD1E4A3B5300AEF9D6 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D498C01E4A3B5300AEF9D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3D498C21E4A3B5300AEF9D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				A3D498DE1E5222E200AEF9D6 /* CalculatorEngine.swift */,
 				A3B193A21E5DD9880007C684 /* Operands.swift */,
 				A3B592EB1E5F0DD70066074F /* SecondControllerViewController.swift */,
+				A3B592ED1E610AFD0066074F /* HistorySession.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3D498C31E4A3B5300AEF9D6 /* ViewController.swift in Sources */,
+				A3B592EE1E610AFD0066074F /* HistorySession.swift in Sources */,
 				A3D498DF1E5222E200AEF9D6 /* CalculatorEngine.swift in Sources */,
 				A3D498C11E4A3B5300AEF9D6 /* AppDelegate.swift in Sources */,
 				A3B193A31E5DD9880007C684 /* Operands.swift in Sources */,

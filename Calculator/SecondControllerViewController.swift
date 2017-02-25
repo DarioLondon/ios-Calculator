@@ -10,7 +10,7 @@ import UIKit
 
 class SecondControllerViewController: UIViewController {
 
-    var history : [String]?
+    var historyData : HistorySession?
     
     @IBOutlet weak var historyView: UITextView!
    
@@ -18,52 +18,37 @@ class SecondControllerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let sel :Selector = #selector(
-            self.appMovedInBackgound
-        )
-        
-        let notificationCenter = NotificationCenter.default
-        
-        notificationCenter.addObserver(
-            self,
-            selector: sel ,
-            name: NSNotification.Name.UIApplicationWillResignActive,
-            object: nil
-        )
-        
-        let defaults = UserDefaults.standard
-        
-        if let historySaved:AnyObject = defaults.object(forKey:"history") as AnyObject?
-        {
-            self.history = (historySaved as! Array)
-            print(self.history!)
-        }
-        else {
-            print("nil value")
-        }
         // Do any additional setup after loading the view.
+        if(self.historyData == nil){
+            print("the array is nil ")
+        }else{
+            print(self.historyData!.history)
+        self.historyData!.displaySession(self.historyView!)
         
-        for h in self.history!{
-            historyView!.insertText(h)
         }
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "backToUserHistory" {
+            
+            let firstVC:ViewController = segue.destination as! ViewController
+            
+            //here I can now pass data to the other view controller by using the property username
+            //for the calulator I could pass the tape data here
+            
+            print("History ==> \(self.historyData!.history )")
+            firstVC.history = self.historyData
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
 
-    func appMovedInBackgound(){
-        print("App moved in the background")
-        let defaults = UserDefaults.standard
-        
-        if(self.history != nil){
-            
-            defaults.set(self.history, forKey:"history")
-        }
-        
-    }
+
     
    
 

@@ -488,7 +488,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="Hnp-oo-3Bv" kind="show" id="pEq-EW-Wya"/>
+                                            <segue destination="Hnp-oo-3Bv" kind="show" identifier="pushToUserHistory" id="pEq-EW-Wya"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4I-J0-txg">
@@ -564,7 +564,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="clearMemory" destination="BYZ-38-t0r" eventType="touchUpInside" id="qOW-Xy-D0u"/>
+                                            <action selector="clearAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XPq-CR-1Lt"/>
                                         </connections>
                                     </button>
                                 </subviews>
