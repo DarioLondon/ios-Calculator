@@ -54,18 +54,19 @@ class CalculatorEngine : NSObject {
         switch(unaryOperand){
             
         case self.operands.squareRoot:
-            if self.numberStack.count >= 1 {
-                return sqrt(abs(numberStack.removeLast()))
-            }
-        case self.operands.powerOfTwo:
-            if self.numberStack.count >= 1 {
+            if self.numberStack.count >= 0 {
                 
-                return pow(self.numberStack.last!,self.numberStack.removeLast())
+            return sqrt(self.numberStack.removeLast())
             }
+            
+        case self.operands.powerOfTwo:
+            
+                return pow(abs(self.numberStack.removeLast()), 2)
+            
         case self.operands.sin:
             if self.numberStack.count >= 1 {
                 
-                if isRadinant {
+                if !isRadinant {
                     return ((self.numberStack.last!.truncatingRemainder(dividingBy: M_PI)) == 0.0)
                         ? 0.0
                         :  __sinpi(self.numberStack.removeLast()/180)
@@ -77,16 +78,31 @@ class CalculatorEngine : NSObject {
                     
                 }
             }
+        case self.operands.sinh:
+            if self.numberStack.count >= 1 {
+                
+                if !isRadinant {
+                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: M_PI)) == 0.0)
+                        ? 0.0
+                        :  sinh(self.numberStack.removeLast() * M_PI)/180
+                }else{
+                    
+                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: 180.0)) == 0.0)
+                        ? 0.0
+                        : sinh(self.numberStack.removeLast())
+                    
+                }
+            }
             
         case self.operands.cosh:
             if self.numberStack.count >= 1 {
-                if isRadinant {
+                if !isRadinant {
                     return ((self.numberStack.last!.truncatingRemainder(dividingBy: M_PI)) == 0.0)
                         ? 0.0
                         :  cosh(self.numberStack.removeLast() * M_PI)/180
                 }else{
                     
-                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: 180.0)) == 0.0)
+                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: 90.0)) == 0.0)
                         ? 0.0
                         : cosh(self.numberStack.removeLast())
                     
@@ -94,9 +110,9 @@ class CalculatorEngine : NSObject {
                 
             }
             
-        case self.operands.cosh:
+        case self.operands.cos:
             if self.numberStack.count >= 1 {
-                if isRadinant {
+                if !isRadinant {
                     return ((self.numberStack.last!.truncatingRemainder(dividingBy: M_PI)) == 0.0)
                         ? 0.0
                         :  __cospi(self.numberStack.removeLast()/180)
@@ -112,7 +128,7 @@ class CalculatorEngine : NSObject {
             
         case self.operands.tan:
             if self.numberStack.count >= 1 {
-                if isRadinant {
+                if !isRadinant {
                     return ((self.numberStack.last!.truncatingRemainder(dividingBy: M_PI)) == 0.0)
                         ? 0.0
                         :  __tanpi(self.numberStack.removeLast()/180)
@@ -121,6 +137,21 @@ class CalculatorEngine : NSObject {
                     return ((self.numberStack.last!.truncatingRemainder(dividingBy: 180.0)) == 0.0)
                         ? 0.0
                         : tan(self.numberStack.removeLast())
+                    
+                }
+                
+            }
+        case self.operands.tanh:
+            if self.numberStack.count >= 1 {
+                if !isRadinant {
+                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: M_PI)) == 0.0)
+                        ? 0.0
+                        :  tanh(self.numberStack.removeLast() * M_PI)/180
+                }else{
+                    
+                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: 180.0)) == 0.0)
+                        ? 0.0
+                        : tanh(self.numberStack.removeLast())
                     
                 }
                 
@@ -137,6 +168,19 @@ class CalculatorEngine : NSObject {
             if self.numberStack.count >= 1 {
                 
                 return log(self.numberStack.removeLast())
+                
+            }
+        case self.operands.pi:
+            if self.numberStack.count >= 0 {
+                
+                return M_PI
+                
+            }
+            
+        case self.operands.reciprocal:
+            if self.numberStack.count >= 1 {
+                
+                return 1.0/self.numberStack.removeLast()
                 
             }
             

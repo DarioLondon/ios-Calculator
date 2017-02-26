@@ -61,6 +61,9 @@
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="unaryOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t6q-Y4-dUy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PP6-54-FUM">
                                         <rect key="frame" x="75" y="0.0" width="75" height="99.5"/>
@@ -77,6 +80,9 @@
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="unaryOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pZJ-dk-Wfu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgJ-tt-SU9">
                                         <rect key="frame" x="150" y="0.0" width="75" height="99.5"/>
@@ -93,12 +99,15 @@
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="getPi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WHE-UB-hiz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bD0-b7-kaN">
                                         <rect key="frame" x="225" y="0.0" width="75" height="99.5"/>
                                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="24"/>
-                                        <state key="normal" title="㏒ℯ">
+                                        <state key="normal" title="ln">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -109,6 +118,9 @@
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="unaryOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lW4-5b-Fj0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R70-2U-aQ9">
                                         <rect key="frame" x="300" y="0.0" width="75" height="99.5"/>
@@ -125,6 +137,9 @@
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="unaryOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hmf-A9-orZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -160,6 +175,9 @@
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="unaryOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yv2-ki-E3r"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKK-Eh-5lS">
                                         <rect key="frame" x="75" y="0.0" width="75" height="99"/>
@@ -176,6 +194,9 @@
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="unaryOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DNS-kc-Cey"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeU-TH-NRD">
                                         <rect key="frame" x="150" y="0.0" width="75" height="99"/>
@@ -192,6 +213,9 @@
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="unaryOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0wu-o3-Xai"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyI-tj-Mjh">
                                         <rect key="frame" x="225" y="0.0" width="75" height="99"/>
@@ -227,6 +251,9 @@
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="functionBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hOO-m8-r97"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -338,6 +365,9 @@
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="idF-nx-32U"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -517,7 +547,7 @@
                                         <rect key="frame" x="150" y="0.0" width="75" height="99.5"/>
                                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="24"/>
-                                        <state key="normal" title="∙">
+                                        <state key="normal" title=".">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -528,6 +558,9 @@
                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="decimalPoint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zG7-ob-Zen"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0t-Dz-wlK">
                                         <rect key="frame" x="225" y="0.0" width="75" height="99.5"/>
@@ -545,7 +578,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="enterKey" destination="BYZ-38-t0r" eventType="touchUpInside" id="KkW-jg-8Pq"/>
+                                            <action selector="enterKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="saY-6v-3Ac"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3d-I1-VhG">
@@ -677,6 +710,9 @@
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="isRadiant:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MwO-t7-yCl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -731,7 +767,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="enterButton" destination="U0t-Dz-wlK" id="ZRP-pK-KNS"/>
+                        <outlet property="labelAngleType" destination="j28-og-ZZA" id="Lxb-ur-SWC"/>
+                        <outlet property="labelCos" destination="qKK-Eh-5lS" id="6Ey-Wy-4yX"/>
                         <outlet property="labelDisplay" destination="qES-Jj-hGT" id="xJw-H7-IZB"/>
+                        <outlet property="labelSin" destination="0tA-Kh-Vq4" id="je1-tG-5bQ"/>
+                        <outlet property="labelSquareRoot" destination="bWX-6y-SQl" id="cJB-Yu-Pvh"/>
+                        <outlet property="labelTan" destination="xeU-TH-NRD" id="lFE-EA-sQz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -791,6 +833,9 @@
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="deleteHistory:" destination="Hnp-oo-3Bv" eventType="touchUpInside" id="EYR-GH-gJp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

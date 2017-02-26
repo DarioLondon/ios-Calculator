@@ -25,6 +25,7 @@ struct  Operand {
     let cosh  :String = "cosh"
     let tanh :String = "tanh"
     let logBaseTen :String = "㏒₁₀"
-    let logBaseE :String = "㏒ℯ"
+    let logBaseE :String = "ln"
+    let reciprocal :String = "⅟x"
     
 }

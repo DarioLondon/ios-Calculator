@@ -14,11 +14,12 @@ class HistorySession : NSObject{
     var history :[String]=[]
     
     func updateHistory(_ button:String, newLine:Bool = false){
-        if (self.history.isEmpty ){
+        
+        if (self.history.isEmpty){
         self.history.append(button)
         }
         
-        if(newLine == true) {
+        else if(newLine == true) {
             self.history.append("")
         }
             
@@ -28,16 +29,22 @@ class HistorySession : NSObject{
             self.history.removeLast()
             self.history.append(session)
         }
+  
     }
 
     func displaySession(_ view:UITextView){
         
         for session in history{
         
-            view.text.append(session + "\n")
+            view.text.append("\(session)\n\n")
         }
     
     
+    }
+    
+    func clearHistory(_ view: UITextView){
+        view.text.removeAll()
+        self.history.removeAll()
     }
 
 }

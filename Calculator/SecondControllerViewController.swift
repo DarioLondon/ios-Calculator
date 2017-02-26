@@ -16,31 +16,62 @@ class SecondControllerViewController: UIViewController {
    
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
         if(self.historyData == nil){
-            print("the array is nil ")
-        }else{
-            print(self.historyData!.history)
-        self.historyData!.displaySession(self.historyView!)
+         self.historyData = HistorySession()
+        }
         
+        let sel :Selector = #selector(
+            self.appMovedInBackgound
+        )
+        
+        let notificationCenter = NotificationCenter.default
+        
+        notificationCenter.addObserver(
+            self,
+            selector: sel ,
+            name: NSNotification.Name.UIApplicationWillResignActive,
+            object: nil
+        )
+        
+        let defaults = UserDefaults.standard
+        
+        if let historySaved:AnyObject = defaults.object(forKey:"history") as AnyObject?
+        {
+            
+            self.historyData!.history = (historySaved as!  NSArray) as! [String]
+            print(self.historyData!.history)
+            self.historyData!.displaySession(historyView)
+        }
+    }
+
+    
+    @IBAction func deleteHistory(_ sender: UIButton) {
+        
+        self.historyData!.clearHistory(historyView!)
+        
+       
+        
+        if(self.historyData != nil){
+            
+            UserDefaults.standard.set(self.historyData!.history, forKey:"history")
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    func appMovedInBackgound(){
+        print("App moved in the background")
+       
         
-        if segue.identifier == "backToUserHistory" {
+        if(self.historyData != nil){
             
-            let firstVC:ViewController = segue.destination as! ViewController
-            
-            //here I can now pass data to the other view controller by using the property username
-            //for the calulator I could pass the tape data here
-            
-            print("History ==> \(self.historyData!.history )")
-            firstVC.history = self.historyData
+            UserDefaults.standard.set(self.historyData!.history, forKey:"history")
         }
+        
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
