@@ -74,10 +74,11 @@ class ViewController: UIViewController {
         
                 let defaults = UserDefaults.standard
         
-                if let historySaved:AnyObject = defaults.object(forKey:"history") as AnyObject?
+                if let historySaved = defaults.object(forKey:"history") as AnyObject?, let historyDisplay = defaults.object(forKey:"historyDisplay") as AnyObject?
                 {
                    
                         self.history!.history = (historySaved as! NSArray) as! [String]
+                        self.labelDisplay!.text = (historyDisplay as! NSString) as String
                         print(self.history!.history)
                 }
         
@@ -114,9 +115,9 @@ class ViewController: UIViewController {
         
         if(!userHasClickedFunc){
             
-            labelSin!.setTitle("sinh", for: .normal)
-            labelCos!.setTitle("cosh" , for: .normal)
-            labelTan!.setTitle("tanh" , for : .normal)
+            labelSin!.setTitle("asin", for: .normal)
+            labelCos!.setTitle("acos" , for: .normal)
+            labelTan!.setTitle("atan" , for : .normal)
             labelSquareRoot!.setTitle("⅟x" , for : .normal)
             userHasClickedFunc = true
         }else{
@@ -124,7 +125,6 @@ class ViewController: UIViewController {
             labelSin!.setTitle("sin", for: .normal)
             labelCos!.setTitle("cos" , for: .normal)
             labelTan!.setTitle("tan" , for : .normal)
-            labelTan!.setTitle("tanh" , for : .normal)
             labelSquareRoot!.setTitle("²√" , for : .normal)
             userHasClickedFunc = false
         }
@@ -236,9 +236,16 @@ class ViewController: UIViewController {
     
     @IBAction func clearAll(_ sender: UIButton) {
         
+        if !self.cal!.numberStack.isEmpty {
         self.history!.updateHistory(sender.currentTitle!, newLine: true )
-        updatePersistenteMemory()
         
+        } else{
+            
+            
+            self.history!.updateHistory(sender.currentTitle!)
+        
+        }
+        updatePersistenteMemory()
         self.cal!.numberStack.removeAll()
         labelDisplay.text = "0"
         userHasStartedTyping=false
@@ -276,16 +283,20 @@ class ViewController: UIViewController {
         
     }
     
-    
-    @IBAction func clearTheLastNumberInserted() {
+    @IBAction func clearLastNumber(_ sender: UIButton) {
+        let decimal :String = sender.currentTitle!
+        
+        self.history!.updateHistory(decimal)
+        updatePersistenteMemory()
         
         self.labelDisplay.text = "0"
         self.userHasStartedTyping=false
         self.userClickedDecimalPoint = false
         self.userHasChangedSign = false
         print("Last Number Removed : => \(self.cal!.numberStack)")
-        
     }
+    
+   
     
     
     @IBAction func digitPressed(_ sender: UIButton) {
@@ -318,10 +329,11 @@ class ViewController: UIViewController {
     func appMovedInBackgound(){
         print("App moved in the background")
      
-        
+        let defaults = UserDefaults.standard
         if(self.history != nil){
             
-            UserDefaults.standard.set(self.history!.history, forKey:"history")
+            defaults.set(self.history!.history, forKey:"history")
+             defaults.set(self.labelDisplay!.text, forKey:"historyDisplay")
         }
         
     }

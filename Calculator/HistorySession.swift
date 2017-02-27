@@ -16,7 +16,7 @@ class HistorySession : NSObject{
     func updateHistory(_ button:String, newLine:Bool = false){
         
         if (self.history.isEmpty){
-        self.history.append(button)
+        self.history.append("\(button) ")
         }
         
         else if(newLine == true) {
@@ -25,7 +25,7 @@ class HistorySession : NSObject{
             
         else{
             
-            let session = String(self.history.last!) + button
+            let session = String(self.history.last!) + "\(button) "
             self.history.removeLast()
             self.history.append(session)
         }

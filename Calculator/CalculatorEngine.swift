@@ -78,33 +78,33 @@ class CalculatorEngine : NSObject {
                     
                 }
             }
-        case self.operands.sinh:
+        case self.operands.asin:
             if self.numberStack.count >= 1 {
                 
                 if !isRadinant {
                     return ((self.numberStack.last!.truncatingRemainder(dividingBy: M_PI)) == 0.0)
                         ? 0.0
-                        :  sinh(self.numberStack.removeLast() * M_PI)/180
+                        :  asin(self.numberStack.removeLast() * M_PI)/180
                 }else{
                     
                     return ((self.numberStack.last!.truncatingRemainder(dividingBy: 180.0)) == 0.0)
                         ? 0.0
-                        : sinh(self.numberStack.removeLast())
+                        : asin(self.numberStack.removeLast())
                     
                 }
             }
             
-        case self.operands.cosh:
+        case self.operands.acos:
             if self.numberStack.count >= 1 {
                 if !isRadinant {
                     return ((self.numberStack.last!.truncatingRemainder(dividingBy: M_PI)) == 0.0)
                         ? 0.0
-                        :  cosh(self.numberStack.removeLast() * M_PI)/180
+                        :  acos(self.numberStack.removeLast() * M_PI)/180
                 }else{
                     
                     return ((self.numberStack.last!.truncatingRemainder(dividingBy: 90.0)) == 0.0)
                         ? 0.0
-                        : cosh(self.numberStack.removeLast())
+                        : acos(self.numberStack.removeLast())
                     
                 }
                 
@@ -141,17 +141,17 @@ class CalculatorEngine : NSObject {
                 }
                 
             }
-        case self.operands.tanh:
+        case self.operands.atan:
             if self.numberStack.count >= 1 {
                 if !isRadinant {
                     return ((self.numberStack.last!.truncatingRemainder(dividingBy: M_PI)) == 0.0)
                         ? 0.0
-                        :  tanh(self.numberStack.removeLast() * M_PI)/180
+                        :  atan(self.numberStack.removeLast() * M_PI)/180
                 }else{
                     
                     return ((self.numberStack.last!.truncatingRemainder(dividingBy: 180.0)) == 0.0)
                         ? 0.0
-                        : tanh(self.numberStack.removeLast())
+                        : atan(self.numberStack.removeLast())
                     
                 }
                 
