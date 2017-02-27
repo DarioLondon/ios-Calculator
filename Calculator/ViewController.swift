@@ -29,9 +29,18 @@ class ViewController: UIViewController {
     
     var displayValue :Double {
         
-        get{ return Double(labelDisplay.text!)! }
+        
+        get{
+            print(" Getting \(labelDisplay.text!)")
+           
+            return Double((labelDisplay.text)!)!
+          
+        }
+        
         set(newValue){
-            if(newValue.truncatingRemainder(dividingBy: 1) == 0){
+            print("Setting \(newValue) ")
+            if (newValue.truncatingRemainder(dividingBy: 1) == 0){
+                
                 let  newValue = Int(newValue)
                 labelDisplay.text = "\(newValue)"
                 
@@ -165,12 +174,13 @@ class ViewController: UIViewController {
         self.history!.updateHistory(digit)
         updatePersistenteMemory()
         
-        if(!isRadiant){
-            sender.setTitle("Deg", for: .normal)
-            isRadiant=true
-        }else{
+        if(isRadiant){
             sender.setTitle("Rad", for: .normal)
-            isRadiant=false
+            isRadiant = false
+          
+        }else{
+            sender.setTitle("Deg", for: .normal)
+            isRadiant = true
         }
     }
     /*
@@ -194,7 +204,7 @@ class ViewController: UIViewController {
             
             
         }
-        
+       
         self.displayValue = self.cal!.UnaryCalculation(unaryOperand:operation ,isRadiant)
         
         self.enterKey(self.enterButton)
@@ -301,6 +311,7 @@ class ViewController: UIViewController {
     
     @IBAction func digitPressed(_ sender: UIButton) {
         
+        if((labelDisplay.text?.characters.count)! <= 12 ){
         let digit : String = sender.currentTitle!
         self.history!.updateHistory(digit)
         updatePersistenteMemory()
@@ -321,7 +332,7 @@ class ViewController: UIViewController {
             userHasStartedTyping = true;
         }
         
-        
+        }
     }
     
     
@@ -347,7 +358,7 @@ class ViewController: UIViewController {
         self.updatePersistenteMemory()
 
         
-        let res :Double = self.cal!.UnaryCalculation(unaryOperand : digit )
+        let res :Double = self.cal!.UnaryCalculation(unaryOperand : digit , isRadiant)
         self.labelDisplay.text = "\(res)"
       
         self.userClickedDecimalPoint = true

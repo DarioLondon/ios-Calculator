@@ -49,7 +49,7 @@ class CalculatorEngine : NSObject {
         return 0.0
     }
     
-    func UnaryCalculation(unaryOperand:String, _ isRadinant :Bool = false )->Double{
+    func UnaryCalculation(unaryOperand:String, _ isRadinant :Bool  )->Double{
         
         switch(unaryOperand){
             
@@ -61,66 +61,57 @@ class CalculatorEngine : NSObject {
             
         case self.operands.powerOfTwo:
             
-                return pow(abs(self.numberStack.removeLast()), 2)
+                return pow(abs(self.numberStack.removeLast()), 2.0)
             
         case self.operands.sin:
             if self.numberStack.count >= 1 {
                 
-                if !isRadinant {
-                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: M_PI)) == 0.0)
-                        ? 0.0
-                        :  __sinpi(self.numberStack.removeLast()/180)
+                if isRadinant {
+                    return  sin(self.numberStack.removeLast())
                 }else{
                     
-                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: 180.0)) == 0.0)
-                        ? 0.0
-                        : sin(self.numberStack.removeLast())
+                    return __sinpi(self.numberStack.removeLast()/180.0)
                     
                 }
             }
         case self.operands.asin:
             if self.numberStack.count >= 1 {
                 
-                if !isRadinant {
-                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: M_PI)) == 0.0)
-                        ? 0.0
-                        :  asin(self.numberStack.removeLast() * M_PI)/180
-                }else{
+                if isRadinant {
+                   
+                    return  asin(self.numberStack.removeLast())
                     
-                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: 180.0)) == 0.0)
-                        ? 0.0
-                        : asin(self.numberStack.removeLast())
+                }else{
+
+                    return  asin(self.numberStack.removeLast() * 180.0) / M_PI
                     
                 }
             }
             
-        case self.operands.acos:
+       
+            
+        case self.operands.cos:
             if self.numberStack.count >= 1 {
-                if !isRadinant {
-                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: M_PI)) == 0.0)
-                        ? 0.0
-                        :  acos(self.numberStack.removeLast() * M_PI)/180
+                if isRadinant {
+                    return  cos(self.numberStack.removeLast())
                 }else{
                     
-                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: 90.0)) == 0.0)
-                        ? 0.0
-                        : acos(self.numberStack.removeLast())
+                    return  __cospi(self.numberStack.removeLast()/180.0)
+
                     
                 }
                 
             }
             
-        case self.operands.cos:
+        case self.operands.acos:
             if self.numberStack.count >= 1 {
-                if !isRadinant {
-                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: M_PI)) == 0.0)
-                        ? 0.0
-                        :  __cospi(self.numberStack.removeLast()/180)
-                }else{
+                if isRadinant {
+                    return  acos(self.numberStack.removeLast())
+                }
+                else{
                     
-                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: 180.0)) == 0.0)
-                        ? 0.0
-                        : cos(self.numberStack.removeLast())
+                    return  acos(self.numberStack.removeLast() * 180.0)/M_PI
+                    
                     
                 }
                 
@@ -128,30 +119,22 @@ class CalculatorEngine : NSObject {
             
         case self.operands.tan:
             if self.numberStack.count >= 1 {
-                if !isRadinant {
-                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: M_PI)) == 0.0)
-                        ? 0.0
-                        :  __tanpi(self.numberStack.removeLast()/180)
+                if isRadinant {
+                    return tan(self.numberStack.removeLast())
                 }else{
                     
-                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: 180.0)) == 0.0)
-                        ? 0.0
-                        : tan(self.numberStack.removeLast())
+                    return   __tanpi(self.numberStack.removeLast()/180.0)
                     
                 }
                 
             }
         case self.operands.atan:
             if self.numberStack.count >= 1 {
-                if !isRadinant {
-                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: M_PI)) == 0.0)
-                        ? 0.0
-                        :  atan(self.numberStack.removeLast() * M_PI)/180
+                if isRadinant {
+                    return  atan(self.numberStack.removeLast())
                 }else{
                     
-                    return ((self.numberStack.last!.truncatingRemainder(dividingBy: 180.0)) == 0.0)
-                        ? 0.0
-                        : atan(self.numberStack.removeLast())
+                    return atan(self.numberStack.removeLast()  * 180.0)/M_PI
                     
                 }
                 
